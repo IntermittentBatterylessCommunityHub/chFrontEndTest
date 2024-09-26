@@ -1,0 +1,3 @@
+User-Agent: *
+#Change later, but while prototyping do not want search engines to bother with this page
+Disallow: /
