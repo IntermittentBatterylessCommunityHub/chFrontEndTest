@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "Name": "ekho",
+      "Headline": "Realistic and Repeatable Experimentation for Tiny Energy-Harvesting Sensors",
+      "Description": "Ekho allows system designers working with ultra low power devices to realistically predict how new hardware and software configurations will perform before deployment. By taking advantage of electrical characteristics all energy sources share, Ekho is able to emulate many different energy sources (e.g., Solar, RF, Thermal, and Vibrational) and takes much of the guesswork out of experimentation with tiny, energy harvesting sensing systems.",
+      "Category": [
+        "Utilities"
+      ],
+      "Tags": [
+        "Energy",
+        "Simulator"
+      ],
+      "Links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/PERSISTLab/ekho"
+        }
+      ]
+    },
+    {
+      "Name": "Mayfly",
+      "Headline": "Language and Runtime Support for Intermittent Devices",
+      "Description": "Programming intermittent devices is challenging. Power outages can happen at any point in the execution, leaving data structures in an inconsistent state or delaying data delivery. Mayfly is a programming language and runtime for intermittent devices, designed to make intermittent programming easier by explicitely capturing a program's timing constraints and automatically ensuring that in-memory data structures are protected.",
+      "Category": [
+        "Development Tools"
+      ],
+      "Tags": [
+        "OS",
+        "Programming Language"
+      ],
+      "Links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/PERSISTLab/mayfly-lang"
+        }
+      ]
+    },
+    {
+      "Name": "Shoulder Angel",
+      "Headline": "An Open Platform for Reprogramming Wayward Wireless Sensors",
+      "Description": "Software bugs are a critical threat to the deployability and maintainability of low-power wireless sensors, resulting in excess power consumption, hardware misconfigurations, incorrect data, and shortened device lifetimes. Worse, these errors can prevent wireless reprogramming, resulting in longer delays and costly human interventions. This repository contains the Shoulder Angel—an ultra-low-power, low-cost, open hardware and software platform that ensures users can always recover and reprogram wireless sensors, in spite of software errors. Shoulder Angel uses a physically separate coprocessor to monitor a device’s power consumption and other behaviors, while keeping the device in a reprogrammable state.",
+      "Category": [
+        "Platform"
+      ],
+      "Tags": [
+        "Deployment support"
+      ],
+      "Links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/PERSISTLab/ShoulderAngel"
+        }
+      ]
+    },
+    {
+      "Name": "IDKFA",
+      "Headline": "IDDQD",
+      "Description": "You played DOOM, don't lie to me.  Fun fact: did you know that in Mechwarrior 2 if you attempt to enter IDKFA as a cheat code it informs you that you are not playing DOOM and immediately destroys your 'mech, ending the mission?",
+      "Category": [
+        "Platform"
+      ],
+      "Tags": [
+        "IDKFA",
+        "IDDQD"
+      ],
+      "Links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/"
+        }
+      ]
+    },
+    {
+      "Name": "Simba",
+      "Headline": "Simulation framework for battery-free devices",
+      "Description": "Simba enables a fast and easy simulation of battery-free devices by integrating different component models and datasets in a single simulation core, and can thus be used for both long-term simulations with real-world traces (i.e., to verify given designs) and short-term simulations with small time granularity (i.e., to explore design options and gain a better understanding of interactions between different components).",
+      "Category": [
+        "Simulation"
+      ],
+      "Tags": [
+        "Design",
+        "Analysis"
+      ],
+      "Links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/LENS-TUGraz/simba"
+        }
+      ]
+    }
+  ]
+}
