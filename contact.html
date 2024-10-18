@@ -4,61 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intermittent/Batteryless Computing Hub</title>
-  <script type="module" crossorigin src="/chFrontEndTest/assets/Navbar-Bk9-Gigp.js"></script>
-  <script type="module" crossorigin src="/chFrontEndTest/assets/navbarmain-Dheqg08D.js"></script>
-  <link rel="stylesheet" crossorigin href="/chFrontEndTest/assets/Navbar-BYnBH-k8.css">
-  <link rel="stylesheet" crossorigin href="/chFrontEndTest/assets/navbarmain-DnxQPYw_.css">
+  <script type="module" crossorigin src="/chFrontEndTest/assets/Navbar-ATAYF2Kb.js"></script>
+  <script type="module" crossorigin src="/chFrontEndTest/assets/navbarmain-D1s6dfbv.js"></script>
+  <link rel="stylesheet" crossorigin href="/chFrontEndTest/assets/Navbar-DUNLImAI.css">
+  <link rel="stylesheet" crossorigin href="/chFrontEndTest/assets/navbarmain-EIPbO4gm.css">
 </head>
 <body class="bg-gray-100">
   <div id="navbar" class="sticky top-0 left-0 right-0"></div>
+  <!--for h-captcha-->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
-  <div id="content" class="flex flex-col mx-24 leading-relaxed">
+  <div id="content" class="flex flex-row mx-24 leading-relaxed">
 
-    <div id="infotext" class="my-6">
+    <div id="infotext" class="my-6 mx-2 basis-6/12">
 
       <div class="bg-gray-200 info-box text-persist-black">
         <div class="font-bold">Wiki</div>
 
         <div>
-          For wiki-related issues, please reach out to the administrators for more information.  Procedures and contact information for the wiki can be found <a href="" class="underline">here.</a>
+          For wiki-related issues, please reach out to the wiki administrators for assistance.  Procedures and contact information for the wiki can be found <a href="" class="underline">here.</a>
         </div>
 
         <div class="font-bold">Request addition to the Artifact Directory</div>
 
         <div>
-          Please fill out the form below and we will reach out to you as soon as possible.  Please include the following information with your submission:
+          Please fill out the form on this page and we will reach out to you as soon as possible.  Please include the following information with your submission:
           <ul class="list-disc list-inside">
             <li>Your name</li>
             <li>The names of any additional project contributors</li>
             <li>Your organization's name (if any)</li>
             <li>Your project name and description</li>
             <li>Link to resource(s) for your project, if publicly available (Github, organization website, etc.)</li>
-            <li>Is the project ready for public release, or do you need assistance with making it ready for public release?  If the latter, what assistance would be needed?</li>
-            <li>Any other relevant information not listed above</li>
+            <li>Is the project ready for public release, or do you need assistance with making it ready for public release?</li>
           </ul>
         </div>
 
-        <div class="font-bold">Other questions or concerns</div>
+        <div class="font-bold">General questions and concerns</div>
 
         <div>
-          Please reach out to us using the form below: please describe your question or concern and we will get back to you as soon as possible.
+          Please reach out to us using the form on this page: describe your question or concern and we will get back to you as soon as possible.
         </div>
 
       </div>
     </div>
 
-    <div id="form">
+    <!--Web3Form template, check website in README for more info-->
+    <div id="contact-form" class="flex flex-col my-6 mx-2 basis-6/12">
 
-      <form action="TBD">
-        <input type="text">
-        <input type="text">
-        <input type="textbox">
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+        <input type="hidden" name="access_key" value="e357a5c0-fb97-46b7-a087-bbc3722fd5a2">
+
+
+
+        <!-- Optional: From Name you want to see in the email
+             Default is "Notifications". you can overwrite here -->
+        <input type="hidden" name="from_name" value="IBCH Community Hub">
+
+        <!-- Optional: Custom Redirection or Thank you Page
+             Make sure you add full URL including https:// -->
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+        <!-- Optional: But Recommended: To Prevent SPAM Submission.
+             Make sure its hidden by default -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+
+        <select id="subject" name="subject" class="textbox-border">
+          <option value="General questions">General Questions</option>
+          <option value="Artifact submissions">Artifact submissions</option>
+        </select>
+        <!-- Custom Form Data: Form data you wish to receive in email. -->
+        <div class="flex flex-col my-1">
+          <input type="text" name="name" placeholder="Your name" required class="max-w-48 my-1 textbox-border">
+          <input type="email" name="email" placeholder="Your e-mail" required class="max-w-64 my-1 textbox-border">
+          <textarea name="message" placeholder="Enter your message here." required class=" my-1 textbox-border"></textarea>
+
+          <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+          <div class="h-captcha my-1" data-captcha="true"></div>
+        </div>
+
+        <button type="submit" class="button">Submit Form</button>
+
       </form>
 
     </div>
 
   </div>
 
+<!--for h-captcha-->
+  <script>
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(e) {
+
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+  </script>
 
 </body>
 </html>
