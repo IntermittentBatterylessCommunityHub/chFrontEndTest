@@ -3,7 +3,7 @@
     {
       "Name": "ekho",
       "Headline": "Realistic and Repeatable Experimentation for Tiny Energy-Harvesting Sensors",
-      "Organization": [],
+      "Organization": ["Clemson University"],
       "Contributors": [],
       "Description": "Ekho allows system designers working with ultra low power devices to realistically predict how new hardware and software configurations will perform before deployment. By taking advantage of electrical characteristics all energy sources share, Ekho is able to emulate many different energy sources (e.g., Solar, RF, Thermal, and Vibrational) and takes much of the guesswork out of experimentation with tiny, energy harvesting sensing systems.",
       "Category": [
@@ -23,7 +23,7 @@
     {
       "Name": "Mayfly",
       "Headline": "Language and Runtime Support for Intermittent Devices",
-      "Organization": [],
+      "Organization": ["Clemson University"],
       "Contributors": [],
       "Description": "Programming intermittent devices is challenging. Power outages can happen at any point in the execution, leaving data structures in an inconsistent state or delaying data delivery. Mayfly is a programming language and runtime for intermittent devices, designed to make intermittent programming easier by explicitely capturing a program's timing constraints and automatically ensuring that in-memory data structures are protected.",
       "Category": [
@@ -43,7 +43,7 @@
     {
       "Name": "Shoulder Angel",
       "Headline": "An Open Platform for Reprogramming Wayward Wireless Sensors",
-      "Organization": [],
+      "Organization": ["Clemson University"],
       "Contributors": [],
       "Description": "Software bugs are a critical threat to the deployability and maintainability of low-power wireless sensors, resulting in excess power consumption, hardware misconfigurations, incorrect data, and shortened device lifetimes. Worse, these errors can prevent wireless reprogramming, resulting in longer delays and costly human interventions. This repository contains the Shoulder Angel—an ultra-low-power, low-cost, open hardware and software platform that ensures users can always recover and reprogram wireless sensors, in spite of software errors. Shoulder Angel uses a physically separate coprocessor to monitor a device’s power consumption and other behaviors, while keeping the device in a reprogrammable state.",
       "Category": [
